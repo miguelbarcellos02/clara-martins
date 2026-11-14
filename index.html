@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clara Martins — Portfolio</title>
+  <meta name="description" content="Clara Martins — architect and urban planner based in Porto. Photography, workshops, sketchbook, collages, interior design and architecture.">
+  <meta property="og:title" content="Clara Martins — Portfolio">
+  <meta property="og:description" content="Architect and urban planner based in Porto. Art and design in public and private spaces.">
+  <meta property="og:image" content="img/ordinary/ordinary-02.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23111'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Opening screen: the animated name -->
+  <header class="hero" id="top">
+    <h1 class="hero-name" aria-label="Clara Martins">
+      <span class="word" data-split>Clara</span>
+      <span class="word word-2" data-split>Martins</span>
+    </h1>
+    <p class="hero-tag">Portfolio</p>
+    <a class="hero-down" href="#about" aria-label="Go to content">↓</a>
+  </header>
+
+  <!-- Fixed menu (left column on computer, top bar on phone) -->
+  <nav class="side" aria-label="Main">
+    <div class="side-top">
+      <a class="side-name" href="#top">Clara Martins<span>Architect &amp; urban planner</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#photos">Photo Album</a><span>Ordinary Life · The Other Passersby · Doorways</span></li>
+      <li><a href="#workshops">Workshops</a><span>Pavilhão Pontaletes</span></li>
+      <li><a href="#sketchbook">Sketchbook &amp; Collages</a></li>
+      <li><a href="#interiors">Interior Design &amp; Architecture</a></li>
+      <!-- Contact: uncomment and put Clara's email in both places.
+      <li class="menu-contact"><a href="#contact">Contact</a><a class="email" href="mailto:EMAIL_DA_CLARA">EMAIL_DA_CLARA</a></li>
+      -->
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <section class="section" id="about">
+      <h2 class="title">About</h2>
+      <div class="text">
+        <p>I am Clara Martins, an architect and urban planner graduated from the Pontifical Catholic University of Minas Gerais (PUC Minas), in Brazil. I hold a postgraduate degree in Interior Design from UNA, in Belo Horizonte (MG), and I am currently pursuing a Master's degree in Public Space Art and Design at the Faculty of Fine Arts of the University of Porto, where I currently live.</p>
+        <p>In this space, I share artistic processes, reflections and approaches to art and design in both public and private spaces. It brings together a collection of works, experiments and projects developed through different interests and perspectives, exploring the relationships between space, art, design and everyday life.</p>
+      </div>
+    </section>
+
+    <section class="section" id="photos">
+      <h2 class="title">Photo Album</h2>
+
+      <div class="series">
+        <div class="series-head">
+          <h3>Ordinary Life</h3>
+          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
+        </div>
+        <div class="strip" data-gallery="Ordinary Life">
+          <img src="img/ordinary/ordinary-01-s.jpg" srcset="img/ordinary/ordinary-01-s.jpg 720w, img/ordinary/ordinary-01.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Sidewalk in the shade of trees, Porto" loading="lazy" decoding="async">
+          <img src="img/ordinary/ordinary-02-s.jpg" srcset="img/ordinary/ordinary-02-s.jpg 720w, img/ordinary/ordinary-02.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Woman walking a dog along a sunny sidewalk" loading="lazy" decoding="async">
+          <img src="img/ordinary/ordinary-03-s.jpg" srcset="img/ordinary/ordinary-03-s.jpg 720w, img/ordinary/ordinary-03.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Tree-lined street with parked motorbikes" loading="lazy" decoding="async">
+          <img src="img/ordinary/ordinary-04-s.jpg" srcset="img/ordinary/ordinary-04-s.jpg 720w, img/ordinary/ordinary-04.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Pedestrians and a dog crossing in front of a bus" loading="lazy" decoding="async">
+          <img src="img/ordinary/ordinary-05-s.jpg" srcset="img/ordinary/ordinary-05-s.jpg 720w, img/ordinary/ordinary-05.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Woman sitting alone in a café" loading="lazy" decoding="async">
+          <img src="img/ordinary/ordinary-06-s.jpg" srcset="img/ordinary/ordinary-06-s.jpg 720w, img/ordinary/ordinary-06.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Man crossing a street corner" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <div class="series">
+        <div class="series-head">
+          <h3>The Other Passersby</h3>
+          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
+        </div>
+        <div class="strip" data-gallery="The Other Passersby">
+          <img src="img/passersby/passersby-01-s.jpg" srcset="img/passersby/passersby-01-s.jpg 720w, img/passersby/passersby-01.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="A cat in a square in front of a chapel" loading="lazy" decoding="async">
+          <img src="img/passersby/passersby-02-s.jpg" srcset="img/passersby/passersby-02-s.jpg 720w, img/passersby/passersby-02.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Tabby cat sitting by an iron railing" loading="lazy" decoding="async">
+          <img src="img/passersby/passersby-03-s.jpg" srcset="img/passersby/passersby-03-s.jpg 720w, img/passersby/passersby-03.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="White cat on red ground under a tree" loading="lazy" decoding="async">
+          <img src="img/passersby/passersby-04-s.jpg" srcset="img/passersby/passersby-04-s.jpg 720w, img/passersby/passersby-04.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Cat resting in the shade of a fence" loading="lazy" decoding="async">
+          <img src="img/passersby/passersby-05-s.jpg" srcset="img/passersby/passersby-05-s.jpg 720w, img/passersby/passersby-05.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Pale cat sitting in the sun" loading="lazy" decoding="async">
+          <img src="img/passersby/passersby-06-s.jpg" srcset="img/passersby/passersby-06-s.jpg 720w, img/passersby/passersby-06.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Cat lying beside a stone wall" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <div class="series">
+        <div class="series-head"><h3>Doorways</h3></div>
+        <div class="doors" data-gallery="Doorways">
+          <img src="img/doors/doors-01-s.jpg" srcset="img/doors/doors-01-s.jpg 720w, img/doors/doors-01.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Brown wooden door with a Correio plate" loading="lazy" decoding="async">
+          <img src="img/doors/doors-02-s.jpg" srcset="img/doors/doors-02-s.jpg 720w, img/doors/doors-02.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark wooden door with a brass knob" loading="lazy" decoding="async">
+          <img class="big b1" src="img/doors/doors-03-s.jpg" srcset="img/doors/doors-03-s.jpg 720w, img/doors/doors-03.jpg 1800w" sizes="(max-width: 760px) 67vw, 30vw" width="1800" height="1350" alt="Green double door with lattice windows" loading="lazy" decoding="async">
+          <img src="img/doors/doors-04-s.jpg" srcset="img/doors/doors-04-s.jpg 720w, img/doors/doors-04.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark blue door with lattice windows" loading="lazy" decoding="async">
+          <img src="img/doors/doors-05-s.jpg" srcset="img/doors/doors-05-s.jpg 720w, img/doors/doors-05.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Pale grey door" loading="lazy" decoding="async">
+          <img src="img/doors/doors-06-s.jpg" srcset="img/doors/doors-06-s.jpg 720w, img/doors/doors-06.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Carved wooden door with a Cartas letter slot" loading="lazy" decoding="async">
+          <img src="img/doors/doors-07-s.jpg" srcset="img/doors/doors-07-s.jpg 720w, img/doors/doors-07.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Blue-grey double door" loading="lazy" decoding="async">
+          <img src="img/doors/doors-08-s.jpg" srcset="img/doors/doors-08-s.jpg 720w, img/doors/doors-08.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Red door with lattice windows" loading="lazy" decoding="async">
+          <img src="img/doors/doors-09-s.jpg" srcset="img/doors/doors-09-s.jpg 720w, img/doors/doors-09.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Burgundy door panels" loading="lazy" decoding="async">
+          <img src="img/doors/doors-10-s.jpg" srcset="img/doors/doors-10-s.jpg 720w, img/doors/doors-10.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark green door with ironwork" loading="lazy" decoding="async">
+          <img class="big b2" src="img/doors/doors-11-s.jpg" srcset="img/doors/doors-11-s.jpg 720w, img/doors/doors-11.jpg 1800w" sizes="(max-width: 760px) 67vw, 30vw" width="1800" height="1350" alt="Grey door with ornate ironwork" loading="lazy" decoding="async">
+          <img src="img/doors/doors-12-s.jpg" srcset="img/doors/doors-12-s.jpg 720w, img/doors/doors-12.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark door with geometric ironwork" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workshops">
+      <h2 class="title">Workshops</h2>
+      <div class="project-head">
+        <h3>Pavilhão Pontaletes</h3>
+        <p class="meta">2024 · Belo Horizonte – MG, Brazil<br>Pontifical Catholic University of Minas Gerais</p>
+      </div>
+      <div class="lead" data-gallery="Pavilhão Pontaletes">
+        <img src="img/pavilion/pavilion-01-s.jpg" srcset="img/pavilion/pavilion-01-s.jpg 720w, img/pavilion/pavilion-01.jpg 1600w" sizes="(max-width: 760px) 100vw, 70vw" width="1600" height="824" alt="The finished pavilion: wooden poles, metal fittings and fabric" loading="lazy" decoding="async">
+      </div>
+      <div class="text">
+        <p>Pavilion designed during our undergraduate studies, in collaboration with Julia Biancini, for the Timber Structures Design course. Developed using a structure composed of wooden poles, metal fittings, and fabric, the project was selected through a competition featuring six proposals created by 8th-semester students. Following a vote, our proposal was chosen, and we had the opportunity to lead a workshop with the students to build the pavilion, which remained installed for four months.</p>
+        <p>The construction process began with sanding the wooden poles to achieve a uniform finish. They were then cut to the dimensions specified in the template. Each piece was numbered to facilitate assembly, and we created an instruction manual to guide the construction process. After cutting, the pieces were screwed together and coated with three layers of varnish to ensure greater protection, as the pavilion would be installed in an outdoor space. Finally, the fabric was attached to the structure to create shaded areas.</p>
+      </div>
+      <div class="series">
+        <div class="series-head">
+          <h3 class="small">Process</h3>
+          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
+        </div>
+        <div class="strip" data-gallery="Pavilhão Pontaletes">
+          <img src="img/pavilion/pavilion-02-s.jpg" srcset="img/pavilion/pavilion-02-s.jpg 540w, img/pavilion/pavilion-02.jpg 960w" sizes="(max-width: 760px) 80vw, 62vh" width="960" height="1280" alt="Sanding one of the wooden poles" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-03-s.jpg" srcset="img/pavilion/pavilion-03-s.jpg 720w, img/pavilion/pavilion-03.jpg 1280w" sizes="(max-width: 760px) 80vw, 62vh" width="1280" height="960" alt="The cut and numbered wooden pieces" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-04-s.jpg" srcset="img/pavilion/pavilion-04-s.jpg 540w, img/pavilion/pavilion-04.jpg 960w" sizes="(max-width: 760px) 80vw, 62vh" width="960" height="1280" alt="Students assembling a module of the pavilion" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-05-s.jpg" srcset="img/pavilion/pavilion-05-s.jpg 540w, img/pavilion/pavilion-05.jpg 1199w" sizes="(max-width: 760px) 80vw, 62vh" width="1199" height="1600" alt="Detail of a wooden joint" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-06-s.jpg" srcset="img/pavilion/pavilion-06-s.jpg 541w, img/pavilion/pavilion-06.jpg 1202w" sizes="(max-width: 760px) 80vw, 62vh" width="1202" height="1600" alt="Detail of the poles and fittings" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-07-s.jpg" srcset="img/pavilion/pavilion-07-s.jpg 566w, img/pavilion/pavilion-07.jpg 1257w" sizes="(max-width: 760px) 80vw, 62vh" width="1257" height="1600" alt="Detail of crossing poles" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sketchbook">
+      <h2 class="title">Sketchbook &amp; Collages</h2>
+      <p class="hint">Click an image to see it larger.</p>
+      <div class="wall" data-gallery="Sketchbook &amp; Collages">
+        <svg class="threads" aria-hidden="true"></svg>
+        <img src="img/sketch/sketch-01-s.jpg" srcset="img/sketch/sketch-01-s.jpg 720w, img/sketch/sketch-01.jpg 1667w" sizes="(max-width: 760px) 45vw, 18vw" width="1667" height="1471" alt="Sketchbook page: collage of photographs and a map" loading="lazy" decoding="async" data-pin="s1">
+        <img src="img/collage/collage-01-s.jpg" srcset="img/collage/collage-01-s.jpg 720w, img/collage/collage-01.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1117" alt="Collage: red lines drawn over a modern building" loading="lazy" decoding="async" data-pin="c1">
+        <img src="img/sketch/sketch-06-s.jpg" srcset="img/sketch/sketch-06-s.jpg 484w, img/sketch/sketch-06.jpg 1210w" sizes="(max-width: 760px) 45vw, 18vw" width="1210" height="1800" alt="Sketchbook page: collage with the words Vai e Vem and a map" loading="lazy" decoding="async" data-pin="s6">
+        <img src="img/sketch/sketch-02-s.jpg" srcset="img/sketch/sketch-02-s.jpg 720w, img/sketch/sketch-02.jpg 1581w" sizes="(max-width: 760px) 45vw, 18vw" width="1581" height="961" alt="Sketchbook page: collage of stairs and shelves" loading="lazy" decoding="async" data-pin="s2">
+        <img src="img/sketch/sketch-03-s.jpg" srcset="img/sketch/sketch-03-s.jpg 720w, img/sketch/sketch-03.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1212" alt="Sketchbook page: collage of street photographs" loading="lazy" decoding="async" data-pin="s3">
+        <img src="img/collage/collage-03-s.jpg" srcset="img/collage/collage-03-s.jpg 447w, img/collage/collage-03.jpg 1117w" sizes="(max-width: 760px) 45vw, 18vw" width="1117" height="1800" alt="Collage: thin lines drawn over the sky above a pink building" loading="lazy" decoding="async" data-pin="c3">
+        <img src="img/sketch/sketch-05-s.jpg" srcset="img/sketch/sketch-05-s.jpg 487w, img/sketch/sketch-05.jpg 1218w" sizes="(max-width: 760px) 45vw, 18vw" width="1218" height="1800" alt="Sketchbook page: photograph of trees in a park" loading="lazy" decoding="async" data-pin="s5">
+        <img src="img/sketch/sketch-07-s.jpg" srcset="img/sketch/sketch-07-s.jpg 528w, img/sketch/sketch-07.jpg 1321w" sizes="(max-width: 760px) 45vw, 18vw" width="1321" height="1800" alt="Sketchbook page: notebook and Social Club collage" loading="lazy" decoding="async" data-pin="s7">
+        <img src="img/sketch/sketch-04-s.jpg" srcset="img/sketch/sketch-04-s.jpg 720w, img/sketch/sketch-04.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1192" alt="Sketchbook page: newspaper strips and paper tape" loading="lazy" decoding="async" data-pin="s4">
+        <img src="img/collage/collage-02-s.jpg" srcset="img/collage/collage-02-s.jpg 720w, img/collage/collage-02.jpg 1640w" sizes="(max-width: 760px) 45vw, 18vw" width="1640" height="1226" alt="Collage: blue grid drawn over a triumphal arch" loading="lazy" decoding="async" data-pin="c2">
+      </div>
+    </section>
+
+    <section class="section" id="interiors">
+      <h2 class="title">Interior Design &amp; Architecture</h2>
+      <div class="series">
+        <div class="series-head">
+          <span></span>
+          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous projects">←</button><button type="button" data-dir="1" aria-label="Next projects">→</button></div>
+        </div>
+        <div class="strip strip-groups" data-gallery="Interior Design &amp; Architecture">
+          <figure class="group">
+            <div class="group-imgs">
+              <img src="img/interior/interior-aw-01-s.jpg" srcset="img/interior/interior-aw-01-s.jpg 720w, img/interior/interior-aw-01.jpg 1552w" sizes="(max-width: 760px) 85vw, 70vh" width="1552" height="1013" alt="House exterior with a ramp and garden, 3D render" loading="lazy" decoding="async">
+              <img src="img/interior/interior-aw-02-s.jpg" srcset="img/interior/interior-aw-02-s.jpg 720w, img/interior/interior-aw-02.jpg 1552w" sizes="(max-width: 760px) 85vw, 70vh" width="1552" height="1013" alt="House front with arched windows, 3D render" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Full development of the architectural construction project and 3D modeling, in collaboration with AW Arquitetura – 2026.</figcaption>
+          </figure>
+          <figure class="group">
+            <div class="group-imgs">
+              <img src="img/interior/interior-ts1-01-s.jpg" srcset="img/interior/interior-ts1-01-s.jpg 720w, img/interior/interior-ts1-01.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Bedroom with wood paneling, 3D render" loading="lazy" decoding="async">
+              <img src="img/interior/interior-ts1-02-s.jpg" srcset="img/interior/interior-ts1-02-s.jpg 720w, img/interior/interior-ts1-02.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Living room with a TV wall, 3D render" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Full development of the interior design project and 3D modeling, in collaboration with Tania Salles Arquitetura – 2025.</figcaption>
+          </figure>
+          <figure class="group">
+            <div class="group-imgs">
+              <img src="img/interior/interior-ts2-01-s.jpg" srcset="img/interior/interior-ts2-01-s.jpg 720w, img/interior/interior-ts2-01.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Child's room with a desk and wardrobe, 3D render" loading="lazy" decoding="async">
+              <img src="img/interior/interior-ts2-02-s.jpg" srcset="img/interior/interior-ts2-02-s.jpg 720w, img/interior/interior-ts2-02.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Child's room with two beds, 3D render" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Full development of the interior design project and 3D modeling, in collaboration with Tania Salles Arquitetura – 2025.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section footer" id="contact">
+      <!-- Contact: to show it, uncomment the two lines below and put Clara's email in both places.
+      <h2 class="title">Contact</h2>
+      <p><a class="email" href="mailto:EMAIL_DA_CLARA">EMAIL_DA_CLARA</a></p>
+      -->
+      <p class="fine">Porto, Portugal · © <span data-year>2026</span> Clara Martins</p>
+    </footer>
+  </main>
+
+  <!-- Enlarged image view -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-close" type="button">Close</button>
+    <button class="lb-prev" type="button" aria-label="Previous image">←</button>
+    <figure class="lb-figure">
+      <img class="lb-img" alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-next" type="button" aria-label="Next image">→</button>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

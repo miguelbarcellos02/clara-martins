@@ -1,0 +1,237 @@
+{
+ "ordinary-01": {
+  "src": "img/ordinary/ordinary-01.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "ordinary-02": {
+  "src": "img/ordinary/ordinary-02.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "ordinary-03": {
+  "src": "img/ordinary/ordinary-03.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "ordinary-04": {
+  "src": "img/ordinary/ordinary-04.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "ordinary-05": {
+  "src": "img/ordinary/ordinary-05.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "ordinary-06": {
+  "src": "img/ordinary/ordinary-06.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "passersby-01": {
+  "src": "img/passersby/passersby-01.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "passersby-02": {
+  "src": "img/passersby/passersby-02.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "passersby-03": {
+  "src": "img/passersby/passersby-03.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "passersby-04": {
+  "src": "img/passersby/passersby-04.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "passersby-05": {
+  "src": "img/passersby/passersby-05.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "passersby-06": {
+  "src": "img/passersby/passersby-06.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-01": {
+  "src": "img/doors/doors-01.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-02": {
+  "src": "img/doors/doors-02.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-03": {
+  "src": "img/doors/doors-03.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-04": {
+  "src": "img/doors/doors-04.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-05": {
+  "src": "img/doors/doors-05.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-06": {
+  "src": "img/doors/doors-06.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-07": {
+  "src": "img/doors/doors-07.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-08": {
+  "src": "img/doors/doors-08.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-09": {
+  "src": "img/doors/doors-09.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-10": {
+  "src": "img/doors/doors-10.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-11": {
+  "src": "img/doors/doors-11.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "doors-12": {
+  "src": "img/doors/doors-12.jpg",
+  "w": 1800,
+  "h": 1350
+ },
+ "pavilion-01": {
+  "src": "img/pavilion/pavilion-01.jpg",
+  "w": 1600,
+  "h": 824
+ },
+ "pavilion-02": {
+  "src": "img/pavilion/pavilion-02.jpg",
+  "w": 960,
+  "h": 1280
+ },
+ "pavilion-03": {
+  "src": "img/pavilion/pavilion-03.jpg",
+  "w": 1280,
+  "h": 960
+ },
+ "pavilion-04": {
+  "src": "img/pavilion/pavilion-04.jpg",
+  "w": 960,
+  "h": 1280
+ },
+ "pavilion-05": {
+  "src": "img/pavilion/pavilion-05.jpg",
+  "w": 1199,
+  "h": 1600
+ },
+ "pavilion-06": {
+  "src": "img/pavilion/pavilion-06.jpg",
+  "w": 1202,
+  "h": 1600
+ },
+ "pavilion-07": {
+  "src": "img/pavilion/pavilion-07.jpg",
+  "w": 1257,
+  "h": 1600
+ },
+ "collage-01": {
+  "src": "img/collage/collage-01.jpg",
+  "w": 1800,
+  "h": 1117
+ },
+ "collage-02": {
+  "src": "img/collage/collage-02.jpg",
+  "w": 1640,
+  "h": 1226
+ },
+ "collage-03": {
+  "src": "img/collage/collage-03.jpg",
+  "w": 1117,
+  "h": 1800
+ },
+ "interior-aw-01": {
+  "src": "img/interior/interior-aw-01.jpg",
+  "w": 1552,
+  "h": 1013
+ },
+ "interior-aw-02": {
+  "src": "img/interior/interior-aw-02.jpg",
+  "w": 1552,
+  "h": 1013
+ },
+ "interior-ts1-01": {
+  "src": "img/interior/interior-ts1-01.jpg",
+  "w": 1800,
+  "h": 1013
+ },
+ "interior-ts1-02": {
+  "src": "img/interior/interior-ts1-02.jpg",
+  "w": 1800,
+  "h": 1013
+ },
+ "interior-ts2-01": {
+  "src": "img/interior/interior-ts2-01.jpg",
+  "w": 1800,
+  "h": 1013
+ },
+ "interior-ts2-02": {
+  "src": "img/interior/interior-ts2-02.jpg",
+  "w": 1800,
+  "h": 1013
+ },
+ "sketch-01": {
+  "src": "img/sketch/sketch-01.jpg",
+  "w": 1667,
+  "h": 1471
+ },
+ "sketch-02": {
+  "src": "img/sketch/sketch-02.jpg",
+  "w": 1581,
+  "h": 961
+ },
+ "sketch-03": {
+  "src": "img/sketch/sketch-03.jpg",
+  "w": 1800,
+  "h": 1212
+ },
+ "sketch-04": {
+  "src": "img/sketch/sketch-04.jpg",
+  "w": 1800,
+  "h": 1192
+ },
+ "sketch-05": {
+  "src": "img/sketch/sketch-05.jpg",
+  "w": 1218,
+  "h": 1800
+ },
+ "sketch-06": {
+  "src": "img/sketch/sketch-06.jpg",
+  "w": 1210,
+  "h": 1800
+ },
+ "sketch-07": {
+  "src": "img/sketch/sketch-07.jpg",
+  "w": 1321,
+  "h": 1800
+ }
+}
