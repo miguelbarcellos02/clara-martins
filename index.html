@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clara Martins — Portfolio</title>
-  <meta name="description" content="Clara Martins — architect and urban planner based in Porto. Photography, workshops, sketchbook, collages, interior design and architecture.">
+  <meta name="description" content="Clara Martins — architect and urban planner based in Porto. Photography, projects, sketchbook, collages and workshops.">
   <meta property="og:title" content="Clara Martins — Portfolio">
   <meta property="og:description" content="Architect and urban planner based in Porto. Art and design in public and private spaces.">
   <meta property="og:image" content="img/ordinary/ordinary-02.jpg">
@@ -13,10 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
-  <!-- Opening screen: the animated name -->
+  <!-- Opening screen: the name types itself -->
   <header class="hero" id="top">
     <h1 class="hero-name" aria-label="Clara Martins">
       <span class="word" data-split>Clara</span>
@@ -34,10 +35,10 @@
     </div>
     <ul class="menu" id="menu">
       <li><a href="#about">About</a></li>
-      <li><a href="#photos">Photo Album</a><span>Ordinary Life · The Other Passersby · Doorways</span></li>
-      <li><a href="#workshops">Workshops</a><span>Pavilhão Pontaletes</span></li>
+      <li><a href="#photos">Photo Album</a><span>Ordinary Life · Doorways</span></li>
+      <li><a href="#projects">Projects</a><span>Os Gatos do Porto</span></li>
       <li><a href="#sketchbook">Sketchbook &amp; Collages</a></li>
-      <li><a href="#interiors">Interior Design &amp; Architecture</a></li>
+      <li><a href="#workshops">Workshops</a><span>Pavilhão Pontaletes</span></li>
       <!-- Contact: uncomment and put Clara's email in both places.
       <li class="menu-contact"><a href="#contact">Contact</a><a class="email" href="mailto:EMAIL_DA_CLARA">EMAIL_DA_CLARA</a></li>
       -->
@@ -62,47 +63,84 @@
           <h3>Ordinary Life</h3>
           <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
         </div>
-        <div class="strip" data-gallery="Ordinary Life">
-          <img src="img/ordinary/ordinary-01-s.jpg" srcset="img/ordinary/ordinary-01-s.jpg 720w, img/ordinary/ordinary-01.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Sidewalk in the shade of trees, Porto" loading="lazy" decoding="async">
-          <img src="img/ordinary/ordinary-02-s.jpg" srcset="img/ordinary/ordinary-02-s.jpg 720w, img/ordinary/ordinary-02.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Woman walking a dog along a sunny sidewalk" loading="lazy" decoding="async">
-          <img src="img/ordinary/ordinary-03-s.jpg" srcset="img/ordinary/ordinary-03-s.jpg 720w, img/ordinary/ordinary-03.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Tree-lined street with parked motorbikes" loading="lazy" decoding="async">
-          <img src="img/ordinary/ordinary-04-s.jpg" srcset="img/ordinary/ordinary-04-s.jpg 720w, img/ordinary/ordinary-04.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Pedestrians and a dog crossing in front of a bus" loading="lazy" decoding="async">
-          <img src="img/ordinary/ordinary-05-s.jpg" srcset="img/ordinary/ordinary-05-s.jpg 720w, img/ordinary/ordinary-05.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Woman sitting alone in a café" loading="lazy" decoding="async">
-          <img src="img/ordinary/ordinary-06-s.jpg" srcset="img/ordinary/ordinary-06-s.jpg 720w, img/ordinary/ordinary-06.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Man crossing a street corner" loading="lazy" decoding="async">
-        </div>
-      </div>
-
-      <div class="series">
-        <div class="series-head">
-          <h3>The Other Passersby</h3>
-          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
-        </div>
-        <div class="strip" data-gallery="The Other Passersby">
-          <img src="img/passersby/passersby-01-s.jpg" srcset="img/passersby/passersby-01-s.jpg 720w, img/passersby/passersby-01.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="A cat in a square in front of a chapel" loading="lazy" decoding="async">
-          <img src="img/passersby/passersby-02-s.jpg" srcset="img/passersby/passersby-02-s.jpg 720w, img/passersby/passersby-02.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Tabby cat sitting by an iron railing" loading="lazy" decoding="async">
-          <img src="img/passersby/passersby-03-s.jpg" srcset="img/passersby/passersby-03-s.jpg 720w, img/passersby/passersby-03.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="White cat on red ground under a tree" loading="lazy" decoding="async">
-          <img src="img/passersby/passersby-04-s.jpg" srcset="img/passersby/passersby-04-s.jpg 720w, img/passersby/passersby-04.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Cat resting in the shade of a fence" loading="lazy" decoding="async">
-          <img src="img/passersby/passersby-05-s.jpg" srcset="img/passersby/passersby-05-s.jpg 720w, img/passersby/passersby-05.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Pale cat sitting in the sun" loading="lazy" decoding="async">
-          <img src="img/passersby/passersby-06-s.jpg" srcset="img/passersby/passersby-06-s.jpg 720w, img/passersby/passersby-06.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Cat lying beside a stone wall" loading="lazy" decoding="async">
+        <!-- Continuous strip: the photos keep passing sideways and start over. To add a photo, copy one line below. -->
+        <div class="strip strip-loop" data-gallery="Ordinary Life">
+          <img src="img/ordinary/ordinary-01-s.jpg" srcset="img/ordinary/ordinary-01-s.jpg 720w, img/ordinary/ordinary-01.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Sidewalk in the shade of trees, Porto" decoding="async">
+          <img src="img/ordinary/ordinary-02-s.jpg" srcset="img/ordinary/ordinary-02-s.jpg 720w, img/ordinary/ordinary-02.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Woman walking a dog along a sunny sidewalk" decoding="async">
+          <img src="img/ordinary/ordinary-03-s.jpg" srcset="img/ordinary/ordinary-03-s.jpg 720w, img/ordinary/ordinary-03.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Tree-lined street with parked motorbikes" decoding="async">
+          <img src="img/ordinary/ordinary-04-s.jpg" srcset="img/ordinary/ordinary-04-s.jpg 720w, img/ordinary/ordinary-04.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Pedestrians and a dog crossing in front of a bus" decoding="async">
+          <img src="img/ordinary/ordinary-05-s.jpg" srcset="img/ordinary/ordinary-05-s.jpg 720w, img/ordinary/ordinary-05.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Woman sitting alone in a café" decoding="async">
+          <img src="img/ordinary/ordinary-06-s.jpg" srcset="img/ordinary/ordinary-06-s.jpg 720w, img/ordinary/ordinary-06.jpg 1800w" sizes="(max-width: 760px) 80vw, 62vh" width="1800" height="1350" alt="Man crossing a street corner" decoding="async">
         </div>
       </div>
 
       <div class="series">
         <div class="series-head"><h3>Doorways</h3></div>
         <div class="doors" data-gallery="Doorways">
-          <img src="img/doors/doors-01-s.jpg" srcset="img/doors/doors-01-s.jpg 720w, img/doors/doors-01.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Brown wooden door with a Correio plate" loading="lazy" decoding="async">
-          <img src="img/doors/doors-02-s.jpg" srcset="img/doors/doors-02-s.jpg 720w, img/doors/doors-02.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark wooden door with a brass knob" loading="lazy" decoding="async">
-          <img class="big b1" src="img/doors/doors-03-s.jpg" srcset="img/doors/doors-03-s.jpg 720w, img/doors/doors-03.jpg 1800w" sizes="(max-width: 760px) 67vw, 30vw" width="1800" height="1350" alt="Green double door with lattice windows" loading="lazy" decoding="async">
-          <img src="img/doors/doors-04-s.jpg" srcset="img/doors/doors-04-s.jpg 720w, img/doors/doors-04.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark blue door with lattice windows" loading="lazy" decoding="async">
-          <img src="img/doors/doors-05-s.jpg" srcset="img/doors/doors-05-s.jpg 720w, img/doors/doors-05.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Pale grey door" loading="lazy" decoding="async">
-          <img src="img/doors/doors-06-s.jpg" srcset="img/doors/doors-06-s.jpg 720w, img/doors/doors-06.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Carved wooden door with a Cartas letter slot" loading="lazy" decoding="async">
-          <img src="img/doors/doors-07-s.jpg" srcset="img/doors/doors-07-s.jpg 720w, img/doors/doors-07.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Blue-grey double door" loading="lazy" decoding="async">
-          <img src="img/doors/doors-08-s.jpg" srcset="img/doors/doors-08-s.jpg 720w, img/doors/doors-08.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Red door with lattice windows" loading="lazy" decoding="async">
-          <img src="img/doors/doors-09-s.jpg" srcset="img/doors/doors-09-s.jpg 720w, img/doors/doors-09.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Burgundy door panels" loading="lazy" decoding="async">
-          <img src="img/doors/doors-10-s.jpg" srcset="img/doors/doors-10-s.jpg 720w, img/doors/doors-10.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark green door with ironwork" loading="lazy" decoding="async">
-          <img class="big b2" src="img/doors/doors-11-s.jpg" srcset="img/doors/doors-11-s.jpg 720w, img/doors/doors-11.jpg 1800w" sizes="(max-width: 760px) 67vw, 30vw" width="1800" height="1350" alt="Grey door with ornate ironwork" loading="lazy" decoding="async">
-          <img src="img/doors/doors-12-s.jpg" srcset="img/doors/doors-12-s.jpg 720w, img/doors/doors-12.jpg 1800w" sizes="(max-width: 760px) 34vw, 15vw" width="1800" height="1350" alt="Dark door with geometric ironwork" loading="lazy" decoding="async">
+          <img src="img/doors/doors-01-s.jpg" srcset="img/doors/doors-01-s.jpg 720w, img/doors/doors-01.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Brown wooden door with a Correio plate" loading="lazy" decoding="async">
+          <img src="img/doors/doors-02-s.jpg" srcset="img/doors/doors-02-s.jpg 720w, img/doors/doors-02.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Dark wooden door with a brass knob" loading="lazy" decoding="async">
+          <img src="img/doors/doors-03-s.jpg" srcset="img/doors/doors-03-s.jpg 720w, img/doors/doors-03.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Green double door with lattice windows" loading="lazy" decoding="async">
+          <img src="img/doors/doors-04-s.jpg" srcset="img/doors/doors-04-s.jpg 720w, img/doors/doors-04.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Dark blue door with lattice windows" loading="lazy" decoding="async">
+          <img src="img/doors/doors-05-s.jpg" srcset="img/doors/doors-05-s.jpg 720w, img/doors/doors-05.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Pale grey door" loading="lazy" decoding="async">
+          <img src="img/doors/doors-06-s.jpg" srcset="img/doors/doors-06-s.jpg 720w, img/doors/doors-06.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Carved wooden door with a Cartas letter slot" loading="lazy" decoding="async">
+          <img src="img/doors/doors-07-s.jpg" srcset="img/doors/doors-07-s.jpg 720w, img/doors/doors-07.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Blue-grey double door" loading="lazy" decoding="async">
+          <img src="img/doors/doors-08-s.jpg" srcset="img/doors/doors-08-s.jpg 720w, img/doors/doors-08.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Red door with lattice windows" loading="lazy" decoding="async">
+          <img src="img/doors/doors-09-s.jpg" srcset="img/doors/doors-09-s.jpg 720w, img/doors/doors-09.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Burgundy door panels" loading="lazy" decoding="async">
+          <img src="img/doors/doors-10-s.jpg" srcset="img/doors/doors-10-s.jpg 720w, img/doors/doors-10.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Dark green door with ironwork" loading="lazy" decoding="async">
+          <img src="img/doors/doors-11-s.jpg" srcset="img/doors/doors-11-s.jpg 720w, img/doors/doors-11.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Grey door with ornate ironwork" loading="lazy" decoding="async">
+          <img src="img/doors/doors-12-s.jpg" srcset="img/doors/doors-12-s.jpg 720w, img/doors/doors-12.jpg 1800w" sizes="(max-width: 760px) 24vw, 130px" width="1800" height="1350" alt="Dark door with geometric ironwork" loading="lazy" decoding="async">
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="project-head">
+        <h3>Os Gatos do Porto</h3>
+        <p class="meta">2025 · Porto, Portugal<br>Faculty of Fine Arts of the University of Porto</p>
+      </div>
+      <div class="lead" data-gallery="Os Gatos do Porto">
+        <img src="img/gatos/gatos-capa-s.jpg" srcset="img/gatos/gatos-capa-s.jpg 720w, img/gatos/gatos-capa.jpg 1600w" sizes="(max-width: 760px) 100vw, 70vw" width="1600" height="1200" alt="Tabby and white cat lying on paving stones beside a granite wall" loading="lazy" decoding="async">
+      </div>
+      <!-- TEXTO DO PROJETO: a Clara vai mandar. Quando chegar, tire o comentário e troque o parágrafo.
+      <div class="text">
+        <p>...</p>
+      </div>
+      -->
+      <div class="series">
+        <div class="series-head">
+          <h3 class="small">Photographs</h3>
+          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
+        </div>
+        <div class="strip" data-gallery="Os Gatos do Porto">
+          <img src="img/gatos/gatos-01-s.jpg" srcset="img/gatos/gatos-01-s.jpg 720w, img/gatos/gatos-01.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1201" alt="Tabby cat under a metal bench, in pink light" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-02-s.jpg" srcset="img/gatos/gatos-02-s.jpg 720w, img/gatos/gatos-02.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Cemetery gate dated 1839, with a man on crutches in the opening" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-03-s.jpg" srcset="img/gatos/gatos-03-s.jpg 720w, img/gatos/gatos-03.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Excavator behind orange netting among graves and autumn leaves" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-04-s.jpg" srcset="img/gatos/gatos-04-s.jpg 720w, img/gatos/gatos-04.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Tabby cat standing on sunlit grass" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-05-s.jpg" srcset="img/gatos/gatos-05-s.jpg 720w, img/gatos/gatos-05.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Four cats resting on a tomb" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-06-s.jpg" srcset="img/gatos/gatos-06-s.jpg 720w, img/gatos/gatos-06.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Two cats in a cemetery alley, in yellow light" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-07-s.jpg" srcset="img/gatos/gatos-07-s.jpg 720w, img/gatos/gatos-07.jpg 1640w" sizes="(max-width: 760px) 80vw, 62vh" width="1640" height="1225" alt="Street at night with each cat circled in red" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-08-s.jpg" srcset="img/gatos/gatos-08-s.jpg 720w, img/gatos/gatos-08.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Black and white cat by a brick wall" loading="lazy" decoding="async">
+          <img src="img/gatos/gatos-09-s.jpg" srcset="img/gatos/gatos-09-s.jpg 720w, img/gatos/gatos-09.jpg 1600w" sizes="(max-width: 760px) 80vw, 62vh" width="1600" height="1200" alt="Tabby cat between stone columns and leaves" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sketchbook">
+      <h2 class="title">Sketchbook &amp; Collages</h2>
+      <p class="hint">Click an image to see it larger.</p>
+      <div class="wall" data-gallery="Sketchbook &amp; Collages">
+        <svg class="threads" aria-hidden="true"></svg>
+        <img src="img/sketch/sketch-01-s.jpg" srcset="img/sketch/sketch-01-s.jpg 720w, img/sketch/sketch-01.jpg 1667w" sizes="(max-width: 760px) 45vw, 18vw" width="1667" height="1471" alt="Sketchbook page: collage of photographs and a map" loading="lazy" decoding="async" data-pin="s1">
+        <img src="img/collage/collage-01-s.jpg" srcset="img/collage/collage-01-s.jpg 720w, img/collage/collage-01.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1117" alt="Collage: red lines drawn over a modern building" loading="lazy" decoding="async" data-pin="c1">
+        <img src="img/sketch/sketch-06-s.jpg" srcset="img/sketch/sketch-06-s.jpg 720w, img/sketch/sketch-06.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1210" alt="Sketchbook page: collage with the words Vai e Vem and a map" loading="lazy" decoding="async" data-pin="s6">
+        <img src="img/sketch/sketch-02-s.jpg" srcset="img/sketch/sketch-02-s.jpg 720w, img/sketch/sketch-02.jpg 1581w" sizes="(max-width: 760px) 45vw, 18vw" width="1581" height="961" alt="Sketchbook page: collage of stairs and shelves" loading="lazy" decoding="async" data-pin="s2">
+        <img src="img/sketch/sketch-03-s.jpg" srcset="img/sketch/sketch-03-s.jpg 720w, img/sketch/sketch-03.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1212" alt="Sketchbook page: collage of street photographs" loading="lazy" decoding="async" data-pin="s3">
+        <img src="img/collage/collage-03-s.jpg" srcset="img/collage/collage-03-s.jpg 447w, img/collage/collage-03.jpg 1117w" sizes="(max-width: 760px) 45vw, 18vw" width="1117" height="1800" alt="Collage: thin lines drawn over the sky above a pink building" loading="lazy" decoding="async" data-pin="c3">
+        <img src="img/sketch/sketch-05-s.jpg" srcset="img/sketch/sketch-05-s.jpg 720w, img/sketch/sketch-05.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1218" alt="Sketchbook page: photograph of trees in a park" loading="lazy" decoding="async" data-pin="s5">
+        <img src="img/sketch/sketch-07-s.jpg" srcset="img/sketch/sketch-07-s.jpg 720w, img/sketch/sketch-07.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1321" alt="Sketchbook page: notebook and Social Club collage" loading="lazy" decoding="async" data-pin="s7">
+        <img src="img/sketch/sketch-04-s.jpg" srcset="img/sketch/sketch-04-s.jpg 720w, img/sketch/sketch-04.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1192" alt="Sketchbook page: newspaper strips and paper tape" loading="lazy" decoding="async" data-pin="s4">
+        <img src="img/collage/collage-02-s.jpg" srcset="img/collage/collage-02-s.jpg 720w, img/collage/collage-02.jpg 1640w" sizes="(max-width: 760px) 45vw, 18vw" width="1640" height="1226" alt="Collage: blue grid drawn over a triumphal arch" loading="lazy" decoding="async" data-pin="c2">
       </div>
     </section>
 
@@ -124,64 +162,14 @@
           <h3 class="small">Process</h3>
           <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div>
         </div>
+        <!-- Construction photos and details alternate -->
         <div class="strip" data-gallery="Pavilhão Pontaletes">
           <img src="img/pavilion/pavilion-02-s.jpg" srcset="img/pavilion/pavilion-02-s.jpg 540w, img/pavilion/pavilion-02.jpg 960w" sizes="(max-width: 760px) 80vw, 62vh" width="960" height="1280" alt="Sanding one of the wooden poles" loading="lazy" decoding="async">
-          <img src="img/pavilion/pavilion-03-s.jpg" srcset="img/pavilion/pavilion-03-s.jpg 720w, img/pavilion/pavilion-03.jpg 1280w" sizes="(max-width: 760px) 80vw, 62vh" width="1280" height="960" alt="The cut and numbered wooden pieces" loading="lazy" decoding="async">
-          <img src="img/pavilion/pavilion-04-s.jpg" srcset="img/pavilion/pavilion-04-s.jpg 540w, img/pavilion/pavilion-04.jpg 960w" sizes="(max-width: 760px) 80vw, 62vh" width="960" height="1280" alt="Students assembling a module of the pavilion" loading="lazy" decoding="async">
           <img src="img/pavilion/pavilion-05-s.jpg" srcset="img/pavilion/pavilion-05-s.jpg 540w, img/pavilion/pavilion-05.jpg 1199w" sizes="(max-width: 760px) 80vw, 62vh" width="1199" height="1600" alt="Detail of a wooden joint" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-03-s.jpg" srcset="img/pavilion/pavilion-03-s.jpg 720w, img/pavilion/pavilion-03.jpg 1280w" sizes="(max-width: 760px) 80vw, 62vh" width="1280" height="960" alt="The cut and numbered wooden pieces" loading="lazy" decoding="async">
           <img src="img/pavilion/pavilion-06-s.jpg" srcset="img/pavilion/pavilion-06-s.jpg 541w, img/pavilion/pavilion-06.jpg 1202w" sizes="(max-width: 760px) 80vw, 62vh" width="1202" height="1600" alt="Detail of the poles and fittings" loading="lazy" decoding="async">
+          <img src="img/pavilion/pavilion-04-s.jpg" srcset="img/pavilion/pavilion-04-s.jpg 540w, img/pavilion/pavilion-04.jpg 960w" sizes="(max-width: 760px) 80vw, 62vh" width="960" height="1280" alt="Students assembling a module of the pavilion" loading="lazy" decoding="async">
           <img src="img/pavilion/pavilion-07-s.jpg" srcset="img/pavilion/pavilion-07-s.jpg 566w, img/pavilion/pavilion-07.jpg 1257w" sizes="(max-width: 760px) 80vw, 62vh" width="1257" height="1600" alt="Detail of crossing poles" loading="lazy" decoding="async">
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sketchbook">
-      <h2 class="title">Sketchbook &amp; Collages</h2>
-      <p class="hint">Click an image to see it larger.</p>
-      <div class="wall" data-gallery="Sketchbook &amp; Collages">
-        <svg class="threads" aria-hidden="true"></svg>
-        <img src="img/sketch/sketch-01-s.jpg" srcset="img/sketch/sketch-01-s.jpg 720w, img/sketch/sketch-01.jpg 1667w" sizes="(max-width: 760px) 45vw, 18vw" width="1667" height="1471" alt="Sketchbook page: collage of photographs and a map" loading="lazy" decoding="async" data-pin="s1">
-        <img src="img/collage/collage-01-s.jpg" srcset="img/collage/collage-01-s.jpg 720w, img/collage/collage-01.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1117" alt="Collage: red lines drawn over a modern building" loading="lazy" decoding="async" data-pin="c1">
-        <img src="img/sketch/sketch-06-s.jpg" srcset="img/sketch/sketch-06-s.jpg 484w, img/sketch/sketch-06.jpg 1210w" sizes="(max-width: 760px) 45vw, 18vw" width="1210" height="1800" alt="Sketchbook page: collage with the words Vai e Vem and a map" loading="lazy" decoding="async" data-pin="s6">
-        <img src="img/sketch/sketch-02-s.jpg" srcset="img/sketch/sketch-02-s.jpg 720w, img/sketch/sketch-02.jpg 1581w" sizes="(max-width: 760px) 45vw, 18vw" width="1581" height="961" alt="Sketchbook page: collage of stairs and shelves" loading="lazy" decoding="async" data-pin="s2">
-        <img src="img/sketch/sketch-03-s.jpg" srcset="img/sketch/sketch-03-s.jpg 720w, img/sketch/sketch-03.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1212" alt="Sketchbook page: collage of street photographs" loading="lazy" decoding="async" data-pin="s3">
-        <img src="img/collage/collage-03-s.jpg" srcset="img/collage/collage-03-s.jpg 447w, img/collage/collage-03.jpg 1117w" sizes="(max-width: 760px) 45vw, 18vw" width="1117" height="1800" alt="Collage: thin lines drawn over the sky above a pink building" loading="lazy" decoding="async" data-pin="c3">
-        <img src="img/sketch/sketch-05-s.jpg" srcset="img/sketch/sketch-05-s.jpg 487w, img/sketch/sketch-05.jpg 1218w" sizes="(max-width: 760px) 45vw, 18vw" width="1218" height="1800" alt="Sketchbook page: photograph of trees in a park" loading="lazy" decoding="async" data-pin="s5">
-        <img src="img/sketch/sketch-07-s.jpg" srcset="img/sketch/sketch-07-s.jpg 528w, img/sketch/sketch-07.jpg 1321w" sizes="(max-width: 760px) 45vw, 18vw" width="1321" height="1800" alt="Sketchbook page: notebook and Social Club collage" loading="lazy" decoding="async" data-pin="s7">
-        <img src="img/sketch/sketch-04-s.jpg" srcset="img/sketch/sketch-04-s.jpg 720w, img/sketch/sketch-04.jpg 1800w" sizes="(max-width: 760px) 45vw, 18vw" width="1800" height="1192" alt="Sketchbook page: newspaper strips and paper tape" loading="lazy" decoding="async" data-pin="s4">
-        <img src="img/collage/collage-02-s.jpg" srcset="img/collage/collage-02-s.jpg 720w, img/collage/collage-02.jpg 1640w" sizes="(max-width: 760px) 45vw, 18vw" width="1640" height="1226" alt="Collage: blue grid drawn over a triumphal arch" loading="lazy" decoding="async" data-pin="c2">
-      </div>
-    </section>
-
-    <section class="section" id="interiors">
-      <h2 class="title">Interior Design &amp; Architecture</h2>
-      <div class="series">
-        <div class="series-head">
-          <span></span>
-          <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Previous projects">←</button><button type="button" data-dir="1" aria-label="Next projects">→</button></div>
-        </div>
-        <div class="strip strip-groups" data-gallery="Interior Design &amp; Architecture">
-          <figure class="group">
-            <div class="group-imgs">
-              <img src="img/interior/interior-aw-01-s.jpg" srcset="img/interior/interior-aw-01-s.jpg 720w, img/interior/interior-aw-01.jpg 1552w" sizes="(max-width: 760px) 85vw, 70vh" width="1552" height="1013" alt="House exterior with a ramp and garden, 3D render" loading="lazy" decoding="async">
-              <img src="img/interior/interior-aw-02-s.jpg" srcset="img/interior/interior-aw-02-s.jpg 720w, img/interior/interior-aw-02.jpg 1552w" sizes="(max-width: 760px) 85vw, 70vh" width="1552" height="1013" alt="House front with arched windows, 3D render" loading="lazy" decoding="async">
-            </div>
-            <figcaption>Full development of the architectural construction project and 3D modeling, in collaboration with AW Arquitetura – 2026.</figcaption>
-          </figure>
-          <figure class="group">
-            <div class="group-imgs">
-              <img src="img/interior/interior-ts1-01-s.jpg" srcset="img/interior/interior-ts1-01-s.jpg 720w, img/interior/interior-ts1-01.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Bedroom with wood paneling, 3D render" loading="lazy" decoding="async">
-              <img src="img/interior/interior-ts1-02-s.jpg" srcset="img/interior/interior-ts1-02-s.jpg 720w, img/interior/interior-ts1-02.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Living room with a TV wall, 3D render" loading="lazy" decoding="async">
-            </div>
-            <figcaption>Full development of the interior design project and 3D modeling, in collaboration with Tania Salles Arquitetura – 2025.</figcaption>
-          </figure>
-          <figure class="group">
-            <div class="group-imgs">
-              <img src="img/interior/interior-ts2-01-s.jpg" srcset="img/interior/interior-ts2-01-s.jpg 720w, img/interior/interior-ts2-01.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Child's room with a desk and wardrobe, 3D render" loading="lazy" decoding="async">
-              <img src="img/interior/interior-ts2-02-s.jpg" srcset="img/interior/interior-ts2-02-s.jpg 720w, img/interior/interior-ts2-02.jpg 1800w" sizes="(max-width: 760px) 85vw, 70vh" width="1800" height="1013" alt="Child's room with two beds, 3D render" loading="lazy" decoding="async">
-            </div>
-            <figcaption>Full development of the interior design project and 3D modeling, in collaboration with Tania Salles Arquitetura – 2025.</figcaption>
-          </figure>
         </div>
       </div>
     </section>

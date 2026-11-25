@@ -1,11 +1,13 @@
 /* Clara Martins — portfolio behaviour.
-   1. Name animation   2. Menu   3. Sideways strips   4. Sketchbook wall + threads   5. Lightbox */
+   1. Name typing   2. Menu   3. Sideways strips (+ continuous strip)   4. Sketchbook wall + threads   5. Lightbox */
 
 (() => {
   const phone = window.matchMedia("(max-width: 760px)");
+  const calm = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  /* ---------- 1. Name: split into letters so each one can move in ---------- */
-  let n = 0;
+  /* ---------- 1. Name: typed letter by letter, with a blinking cursor ---------- */
+  const hero = document.querySelector(".hero");
+  const letters = [];
   document.querySelectorAll("[data-split]").forEach((word) => {
     const text = word.textContent.trim();
     word.textContent = "";
@@ -13,14 +15,37 @@
       const span = document.createElement("span");
       span.className = "ch";
       span.setAttribute("aria-hidden", "true");
-      span.style.setProperty("--i", n++);
       span.textContent = ch;
       word.appendChild(span);
+      letters.push(span);
     }
   });
 
+  const caret = document.createElement("span");
+  caret.className = "caret";
+  caret.setAttribute("aria-hidden", "true");
+  caret.textContent = "|";
+
+  if (calm.matches || !letters.length) {
+    letters.forEach((l) => l.classList.add("on"));
+    hero.classList.add("is-typed");
+  } else {
+    letters[0].before(caret);
+    let i = 0;
+    const typeNext = () => {
+      const l = letters[i];
+      l.classList.add("on");
+      l.after(caret);
+      i++;
+      if (i === letters.length) { hero.classList.add("is-typed"); return; }
+      const newWord = letters[i].parentElement !== l.parentElement;
+      // a little irregular, like someone typing; a pause between the two words
+      setTimeout(typeNext, newWord ? 420 : 95 + Math.random() * 110);
+    };
+    setTimeout(typeNext, 650);
+  }
+
   /* ---------- 2. Menu ---------- */
-  const hero = document.querySelector(".hero");
   const side = document.querySelector(".side");
   const menuBtn = document.querySelector(".menu-btn");
 
@@ -56,24 +81,49 @@
 
   /* ---------- 3. Strips: drag with the mouse, arrows, swipe on phones ---------- */
   let suppressClick = false;
+  const box = document.querySelector(".lightbox");
 
   document.querySelectorAll(".strip").forEach((strip) => {
+    const loop = strip.classList.contains("strip-loop");
     const nav = strip.closest(".series")?.querySelector(".strip-nav");
     const [prev, next] = nav ? nav.querySelectorAll("button") : [];
 
+    // Continuous strip: a second copy of the photos follows the first, so the end joins the start
+    let originals = [];
+    if (loop) {
+      originals = [...strip.querySelectorAll("img")];
+      originals.forEach((img, n) => {
+        const copy = img.cloneNode(true);
+        copy.dataset.clone = n;
+        copy.alt = "";
+        copy.setAttribute("aria-hidden", "true");
+        strip.appendChild(copy);
+      });
+    }
+    // Width of one full set of photos (where the copy begins)
+    const cycle = () => strip.querySelector("[data-clone]").offsetLeft - originals[0].offsetLeft;
+    const wrap = () => {
+      const w = cycle();
+      if (w <= 0) return;
+      if (strip.scrollLeft >= w) strip.scrollLeft -= w;
+      else if (strip.scrollLeft <= 0) strip.scrollLeft += w;
+    };
+
     const update = () => {
-      if (!prev) return;
+      if (!prev || loop) return;
       prev.disabled = strip.scrollLeft < 4;
       next.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 4;
     };
-    strip.addEventListener("scroll", update, { passive: true });
+    strip.addEventListener("scroll", () => { update(); }, { passive: true });
     window.addEventListener("resize", update);
     strip.querySelectorAll("img").forEach((img) => img.addEventListener("load", update));
     update();
 
+    let pausedUntil = 0;
     nav?.addEventListener("click", (e) => {
       const btn = e.target.closest("button");
       if (!btn) return;
+      if (loop) { pausedUntil = performance.now() + 1400; if (strip.scrollLeft < strip.clientWidth) strip.scrollLeft += cycle(); }
       strip.scrollBy({ left: Number(btn.dataset.dir) * strip.clientWidth * 0.8, behavior: "smooth" });
     });
 
@@ -87,7 +137,10 @@
       if (!down) return;
       const dx = e.clientX - startX;
       if (!moved && Math.abs(dx) > 5) { moved = true; strip.classList.add("is-dragging"); }
-      if (moved) strip.scrollLeft = startScroll - dx;
+      if (moved) {
+        strip.scrollLeft = startScroll - dx;
+        if (loop) { const before = strip.scrollLeft; wrap(); startScroll += strip.scrollLeft - before; }
+      }
     });
     window.addEventListener("pointerup", () => {
       if (!down) return;
@@ -97,8 +150,39 @@
         setTimeout(() => { suppressClick = false; }, 0);
         strip.classList.remove("is-dragging");
       }
+      if (loop) pausedUntil = performance.now() + 1200;
     });
     strip.addEventListener("dragstart", (e) => e.preventDefault());
+
+    if (!loop) return;
+
+    // Gentle constant drift; it stops while the pointer is over it, a finger is on it,
+    // the enlarged view is open, or the strip is off screen.
+    const SPEED = 34; // pixels per second
+    let hovering = false, touching = false, visible = false, pos = 0, last = 0;
+    strip.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") hovering = true; });
+    strip.addEventListener("pointerleave", () => { hovering = false; });
+    strip.addEventListener("touchstart", () => { touching = true; }, { passive: true });
+    strip.addEventListener("touchend", () => { touching = false; pausedUntil = performance.now() + 1500; }, { passive: true });
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(strip);
+
+    const tick = (now) => {
+      const dt = last ? Math.min(now - last, 100) / 1000 : 0;
+      last = now;
+      const moving = visible && !hovering && !touching && !down && box.hidden && now > pausedUntil && !calm.matches;
+      if (!moving) {
+        pos = strip.scrollLeft;
+        if (visible && !down && now > pausedUntil) wrap();
+      } else {
+        if (Math.abs(strip.scrollLeft - pos) > 2) pos = strip.scrollLeft; // moved by a wheel or trackpad
+        pos += SPEED * dt;
+        const w = cycle();
+        if (w > 0 && pos >= w) pos -= w;
+        strip.scrollLeft = pos;
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
   });
 
   /* ---------- 4. Sketchbook wall ----------
@@ -106,14 +190,14 @@
   const wall = document.querySelector(".wall");
   const layouts = {
     wide: {
-      s1: [3, 4, 15, -1.2], c1: [24, 1, 19, 0.8], s6: [50, 6, 11, -0.6], s2: [72, 2, 19, 1],
-      s3: [7, 30, 18, 0.7], c3: [34, 25, 10, -1], s5: [56, 31, 11, 0.9], c2: [76, 33, 16, -0.7],
-      s7: [22, 52, 11, 1.1], s4: [50, 55, 17, -0.8],
+      s1: [3, 4, 15, -1.2], c1: [24, 1, 19, 0.8], s6: [47, 5, 18, -0.6], s2: [72, 2, 19, 1],
+      s3: [7, 30, 18, 0.7], c3: [34, 25, 10, -1], s5: [52, 29, 18, 0.9], c2: [77, 33, 16, -0.7],
+      s7: [19, 53, 17, 1.1], s4: [50, 55, 17, -0.8],
     },
     narrow: {
-      s1: [4, 2, 40, -1.2], c1: [52, 6, 44, 0.8], s6: [8, 44, 26, -0.6], s2: [46, 42, 48, 1],
-      c3: [64, 80, 26, -1], s3: [4, 92, 50, 0.7], s5: [10, 136, 30, 0.9], c2: [50, 132, 46, -0.7],
-      s7: [54, 176, 36, 1.1], s4: [4, 192, 46, -0.8],
+      s1: [4, 2, 40, -1.2], c1: [52, 6, 44, 0.8], s6: [4, 46, 40, -0.6], s2: [48, 42, 48, 1],
+      c3: [64, 80, 26, -1], s3: [4, 86, 50, 0.7], s5: [6, 132, 42, 0.9], c2: [52, 130, 44, -0.7],
+      s7: [50, 174, 44, 1.1], s4: [4, 182, 42, -0.8],
     },
   };
   const threads = [
@@ -177,7 +261,6 @@
   }
 
   /* ---------- 5. Lightbox ---------- */
-  const box = document.querySelector(".lightbox");
   const boxImg = box.querySelector(".lb-img");
   const boxCap = box.querySelector(".lb-caption");
   const closeBtn = box.querySelector(".lb-close");
@@ -197,10 +280,12 @@
   }
 
   function open(img) {
+    // A copy in the continuous strip opens its original
+    if (img.dataset.clone !== undefined) img = img.parentElement.querySelectorAll("img:not([data-clone])")[img.dataset.clone];
     const gallery = img.closest("[data-gallery]").dataset.gallery;
     list = [...document.querySelectorAll("[data-gallery]")]
       .filter((g) => g.dataset.gallery === gallery)
-      .flatMap((g) => [...g.querySelectorAll("img")]);
+      .flatMap((g) => [...g.querySelectorAll("img:not([data-clone])")]);
     lastFocus = document.activeElement;
     show(list.indexOf(img));
     box.hidden = false;
